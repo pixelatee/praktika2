@@ -2,17 +2,32 @@
 <html>
 <head>
     <title>Вход</title>
+    <!-- Подключаем CSS файл -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Вход</h1>
+    <!-- Логотип -->
+    <img src="logo.png" alt="Logo">
+    
+    <!-- Заголовок -->
+    <h1>Войти</h1>
+    
+    <!-- Форма входа -->
     <form action="/user/login" method="post">
+        <!-- Поле ввода номера телефона -->
         <label for="phone">Номер телефона:</label>
-        <input type="tel" id="phone" name="phone" placeholder="Введите ваш номер телефона" required><br><br>
-
+        <input type="tel" id="phone" name="phone" placeholder="Введите ваш номер телефона" required>
+        
+        <!-- Поле ввода пароля -->
         <label for="password">Пароль:</label>
-        <input type="password" id="password" name="password" placeholder="Введите ваш пароль" required><br><br>
-
+        <input type="password" id="password" name="password" placeholder="Введите ваш пароль" required>
+        
+        <!-- Кнопка "Войти" -->
         <button type="submit">Войти</button>
     </form>
+    
+    <!-- Ссылки -->
+    <a href="password/reset.html">Забыли пароль</a>
+    <a href="register.html">Регистрация</a>
 </body>
 </html>
