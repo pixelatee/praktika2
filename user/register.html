@@ -6,11 +6,17 @@
 <body>
     <h1>Регистрация</h1>
     <form action="/user/register" method="post">
-        <label for="email">Электронная почта:</label>
-        <input type="email" id="email" name="email" placeholder="Введите вашу почту" required><br><br>
+        <label for="country">Страна:</label>
+        <select id="country" name="country" required>
+            <option value="russia">Россия</option>
+            <option value="usa">США</option>
+            <option value="ukraine">Украина</option>
+            <option value="kazakhstan">Казахстан</option>
+            <option value="other">Другая страна</option>
+        </select><br><br>
 
-        <label for="username">Логин:</label>
-        <input type="text" id="username" name="username" placeholder="Введите ваш логин" required><br><br>
+        <label for="phone">Номер телефона:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Введите ваш номер телефона" required><br><br>
 
         <label for="password">Пароль:</label>
         <input type="password" id="password" name="password" placeholder="Введите ваш пароль" required><br><br>
