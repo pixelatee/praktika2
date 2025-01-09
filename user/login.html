@@ -4,6 +4,15 @@
     <title>Вход</title>
 </head>
 <body>
-    <h1>Страница входа</h1>
+    <h1>Вход</h1>
+    <form action="/user/login" method="post">
+        <label for="username">Логин:</label>
+        <input type="text" id="username" name="username" placeholder="Введите ваш логин" required><br><br>
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" placeholder="Введите ваш пароль" required><br><br>
+
+        <button type="submit">Войти</button>
+    </form>
 </body>
 </html>
